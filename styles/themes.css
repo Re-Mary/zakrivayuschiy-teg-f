@@ -4,3 +4,52 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+    --accent-color: #00cc14;
+    --bg-color: #000;
+    --bg-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
+    --btn-color: var(--accent-color);
+    --contour-color: var(--accent-color);
+    --font-weight-normal: 465;
+}
+
+:root.theme-light {
+    --accent-color: #000;
+    --bg-color: #fff;
+    --bg-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+        linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+    --btn-color: #fff;
+    --contour-color: var(--accent-color);
+    --font-weight-normal: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-color: #00cc14;
+        --bg-color: #000;
+        --bg-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+            repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+            linear-gradient(to bottom, #007f0c, #004306);
+        --btn-color: var(--accent-color);
+        --contour-color: var(--accent-color);
+        --font-weight-normal: 465;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-color: #000;
+        --bg-color: #fff;
+        --bg-image: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+            repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+            linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
+        --btn-color: #fff;
+        --contour-color: var(--accent-color);
+        --font-weight-normal: 400;
+    }
+}
