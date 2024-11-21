@@ -22,6 +22,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3125rem;
+}
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-font, sans-serif);
+    font-variation-settings: "wght" var(--font-weight-normal, 465);
+  }
 }
 
 .button {
@@ -154,10 +165,6 @@
   margin: 0 auto 6.25rem;
 }
 
-.section {
-  margin: 0 auto;
-}
-
 .card {
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
@@ -165,12 +172,16 @@
 }
 
 .section__title {
-  font-family: var(--main-font);
-  font-weight: 785;
-  font-size: var(--font-medium);
+  font-weight: 700;
   color: var(--accent-color);
   border-block-end: 2px solid var(--accent-color);
   padding: 3px 10px;
+}
+
+@supports (font-variation-settings: normal) {
+  .section__title {
+    font-variation-settings: "wght" var(--font-weght-bold, 785);
+  }
 }
 
 .content__figure {
@@ -330,7 +341,6 @@ dialog::backdrop {
 
 .filter-saturate {
   filter: saturate(180%);
-  filter: sepia(30%);
 }
 
 .filter-brightness {
@@ -352,7 +362,7 @@ dialog::backdrop {
 @media (width <=375px) {
 
   .header__logo {
-    padding-block-start: 17.5rem;
+    padding-block-start: 7.5rem;
   }
 
   .theme-menu__list {

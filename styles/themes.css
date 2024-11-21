@@ -14,6 +14,7 @@
     --btn-color: var(--accent-color);
     --contour-color: var(--accent-color);
     --font-weight-normal: 465;
+    --font-weght-bold: 785;
 }
 
 :root.theme-light {
@@ -25,6 +26,7 @@
     --btn-color: #fff;
     --contour-color: var(--accent-color);
     --font-weight-normal: 400;
+    --font-weght-bold: 700;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +39,7 @@
         --btn-color: var(--accent-color);
         --contour-color: var(--accent-color);
         --font-weight-normal: 465;
+        --font-weght-bold: 785;
     }
 }
 
@@ -51,5 +54,6 @@
         --btn-color: #fff;
         --contour-color: var(--accent-color);
         --font-weight-normal: 400;
+        --font-weght-bold: 700;
     }
 }
