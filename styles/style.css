@@ -112,7 +112,6 @@
   padding-top: 1.313rem;
 }
 
-
 .theme-menu__button {
   text-transform: uppercase;
   font-size: var(--font-small);
@@ -137,6 +136,10 @@
 .theme-menu__button:hover {
   opacity: 0.6;
   transition-timing-function: ease;
+}
+
+.theme-menu__button:focus {
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -299,12 +302,17 @@ dialog::backdrop {
 }
 
 /* Dialog window */
+/* .dialog {
+  min-width: 353px;
+} */
+
 .dialog {
   padding: 1.875rem;
   background-color: var(--bg-color);
   color: var(--accent-color);
   text-transform: uppercase;
   font-family: var(--font-header);
+  min-width: 353px;
 }
 
 .dialog__content {
@@ -316,22 +324,21 @@ dialog::backdrop {
 .dialog__icon {
   width: 2.4375rem;
   height: 2.4375rem;
+  flex: 0 0 auto;
 }
 
 .dialog__text {
   font-size: var(--font-small);
   line-height: 150%;
   font-weight: 400;
-  max-width: 14.625rem;
 }
 
-
 .dialog__button {
-  width: 18.3125rem;
   height: 2.375rem;
   margin-block-start: 1.875rem;
   line-height: 90%;
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* FILTERS */
@@ -390,19 +397,8 @@ dialog::backdrop {
   }
 
   .dialog {
-    padding: 2.5rem;
-  }
-
-  .dialog__content {
-    gap: 0.812rem;
-  }
-
-  .dialog__text {
-    max-width: 12.375rem;
-  }
-
-  .dialog__button {
-    width: 16.063rem;
+    padding: 30px 41px;
+    min-width: 341px;
   }
 
 }

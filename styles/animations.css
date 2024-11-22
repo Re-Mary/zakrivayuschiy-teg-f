@@ -79,17 +79,17 @@
     fill: #f00;
 }
 
-.is-liked .contour {
+.like-icon.is-liked .contour {
     fill: #f00;
     transition: fill 0.3s linear 0.06s;
 }
 
-.is-liked .main-body {
+.like-icon.is-liked .main-body {
     fill: #f00;
     transition: fill 0.3s linear 0.05s;
 }
 
-.is-liked .core {
+.like-icon.is-liked .core {
     fill: #f00;
     transition: fill 0.3s linear;
 }
