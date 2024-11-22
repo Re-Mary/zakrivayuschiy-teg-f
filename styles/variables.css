@@ -5,4 +5,14 @@
     --main-font: "Inter-Variable", sans-serif;
     --font-small: 0.875rem;
     --font-medium: 1.125rem;
+
+    --accent-color: #00cc14;
+    --bg-color: #000;
+    --bg-image: repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        repeating-linear-gradient(to right, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
+    --btn-color: var(--accent-color);
+    --contour-color: var(--accent-color);
+    --font-weight-normal: 465;
+    --font-weght-bold: 785;
 }

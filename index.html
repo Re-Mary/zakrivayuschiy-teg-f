@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Закрывающий тег</title>
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
-  <!--add Icon for the smartphones-->
+  <link rel="apple-touch-icon" href="./images/apple_touch_icon.png">
   <meta name="title" content="Закрывающий тег" />
   <meta name="description" content="Путь в верстке, с чего всё начиналось" />
 
@@ -48,9 +48,9 @@
   <main class="content">
     <!--Null-Card-->
     <article class="card">
-      <h3 class="section__title">
+      <h2 class="section__title">
         Фритрек и нулевой спринт: Подготовка к работе
-      </h3>
+      </h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/auto.avif" type="image/avif" />
@@ -67,8 +67,8 @@
         </p>
         <p class="text">Были прекрасные еще очень жаркие августовские дни.</p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -94,13 +94,13 @@
     </article>
     <!--1-Card-->
     <article class="card">
-      <h3 class="section__title">1 спринт: Я — чистый лист</h3>
+      <h2 class="section__title">1 спринт: Я — чистый лист</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_1.avif" type="image/avif" />
           <source srcset="./images/card_1.webp" type="image/webp" />
           <img class="card__img" src="./images/card_1.png" loading="lazy"
-            alt="water white board and no idea what is waiting for me" />
+            alt="Фотореалистичное изображение листа бумаги на поверхности прозврачной воды" />
         </picture>
         <figcaption class="content__figure-caption">&lt;/HTML&gt;</figcaption>
       </figure>
@@ -117,8 +117,8 @@
           движений кисти.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -144,13 +144,13 @@
     </article>
     <!--2-Card-->
     <article class="card">
-      <h3 class="section__title">1 спринт: А если не получится?</h3>
+      <h2 class="section__title">1 спринт: А если не получится?</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_2.avif" type="image/avif" />
           <source srcset="./images/card_2.webp" type="image/webp" />
           <img class="card__img filter-contrast" src="./images/card_2.png" loading="lazy"
-            alt="every minute i tried to learn how to make CSS, also on the railway station by waiting of train" />
+            alt="диджитал рисунок карандашом с девочкой, сидящей на лавочке с ноутбуком и ждущей поезда" />
         </picture>
         <figcaption class="content__figure-caption">&lt;CSS&gt;</figcaption>
       </figure>
@@ -165,8 +165,8 @@
           ожидании поезда я делала домашку.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -192,12 +192,13 @@
     </article>
     <!--3-Card-->
     <article class="card">
-      <h3 class="section__title">2 спринт: Погоня за идеалом</h3>
+      <h2 class="section__title">2 спринт: Погоня за идеалом</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_3.avif" type="image/avif" />
           <source srcset="./images/card_3.webp" type="image/webp" />
-          <img class="card__img filter-saturate" src="./images/card_3.png" loading="lazy" alt="watercolour berry" />
+          <img class="card__img filter-saturate" src="./images/card_3.png" loading="lazy"
+            alt="акварельный ботанический рисунок ежевики" />
         </picture>
         <figcaption class="content__figure-caption">
           &lt;desigions&gt;
@@ -216,8 +217,8 @@
           получаться, но нужно тренироваться и просто делать.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -243,13 +244,13 @@
     </article>
     <!--4-Card-->
     <article class="card">
-      <h3 class="section__title">2 спринт: О тех, кто рядом</h3>
+      <h2 class="section__title">2 спринт: О тех, кто рядом</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_4.avif" type="image/avif" />
           <source srcset="./images/card_4.webp" type="image/webp" />
           <img class="card__img filter-brightness" src="./images/card_4.png" loading="lazy"
-            alt="foto tretjakov gallery in winter" />
+            alt="черно-белая плёночная фотография очереди перед входом в третьяковскую галерею зимой" />
         </picture>
         <figcaption class="content__figure-caption">&lt;care&gt;</figcaption>
       </figure>
@@ -266,8 +267,8 @@
           Я очень рада, что вокруг есть люди, готовые помочь.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -293,13 +294,13 @@
     </article>
     <!--5-Card-->
     <article class="card">
-      <h3 class="section__title">3 спринт: Обходные стратегии</h3>
+      <h2 class="section__title">3 спринт: Обходные стратегии</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_5.avif" type="image/avif" />
           <source srcset="./images/card_5.webp" type="image/webp" />
           <img class="card__img filter-sepia" src="./images/card_5.png" loading="lazy"
-            alt="illustration with dragons" />
+            alt="диджитал иллюстрация с двумя драконами" />
         </picture>
         <figcaption class="content__figure-caption">
           &lt;support&gt;
@@ -313,8 +314,8 @@
         </p>
         <p class="text">Иногда привычный подход совершенно не подходит.</p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -340,13 +341,13 @@
     </article>
     <!--6-Card-->
     <article class="card">
-      <h3 class="section__title">3 спринт: Когда опускаются руки</h3>
+      <h2 class="section__title">3 спринт: Когда опускаются руки</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_6.avif" type="image/avif" />
           <source srcset="./images/card_6.webp" type="image/webp" />
           <img class="card__img filter-blur" src="./images/card_6.png" loading="lazy"
-            alt="illustration if you do not know what to do and why is it like this" />
+            alt="диджитал иллюстрация на плакате с эмоцией недоумения" />
         </picture>
         <figcaption class="content__figure-caption">
           &lt;lifes-style: none;&gt;
@@ -364,8 +365,8 @@
           Третий спринт пролетел, что я даже не успела понять, что и как.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -391,13 +392,13 @@
     </article>
     <!--7-Card-->
     <article class="card">
-      <h3 class="section__title">«Сейчас я здесь»</h3>
+      <h2 class="section__title">«Сейчас я здесь»</h2>
       <figure class="content__figure">
         <picture>
           <source srcset="./images/card_7.avif" type="image/avif" />
           <source srcset="./images/card_7.webp" type="image/webp" />
           <img class="card__img filter-invert" src="./images/card_7.png" loading="lazy"
-            alt="fantasy illustration with a cat" />
+            alt="иллюстрация с котом, плывущим по волнам на дощечке в море" />
         </picture>
         <figcaption class="content__figure-caption">
           &lt;experience&gt;
@@ -417,8 +418,8 @@
           увлекательный мир.
         </p>
       </div>
-      <div class="card__button" aria-hidden="true">
-        <button class="card__icon-button" type="button">
+      <div class="card__button">
+        <button class="card__icon-button" type="button" aria-label="Поставить лайк">
           <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart">
               <path class="contour" fill="var(--contour-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 
@@ -459,7 +460,7 @@
         </svg>
         <h2 class="dialog__text">Вставьте дискету, чтобы продолжить</h2>
       </div>
-      <button class="button dialog__button" type="submit" onclick="window['dialog-id'].close();">
+      <button class="button dialog__button" type="button" onclick="window['dialog-id'].close();">
         <span class="button__text">ок</span>
       </button>
     </dialog>
